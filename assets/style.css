@@ -15,7 +15,7 @@
   border: none;
   background-color: #EAEAEA;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -52,12 +52,61 @@
   padding: 13px 19px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   color: white;
   text-align: center;
 }
 
-* {
-  margin: 0;
+.how-to__title {
+  margin: 48px 0 26px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.how-to__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 68px;
+}
+
+.steps__button {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  height: 72px;
+  width: 322px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.steps-button__number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  position: relative;
+  right: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.steps-button__icon {
+  color: #7E7E7E;
+  padding-right: 20px;
+}
+.steps-button__icon--colored {
+  color: #9356DC;
+}
+.steps-button__text {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 header {
