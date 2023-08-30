@@ -1,1 +1,35 @@
-@import "libs/variables.scss";
+@import "variables.scss";
+
+header {
+    @include col-dir;
+}
+
+.header {
+    &__logo{
+        @include col-dir;
+        justify-content: center;
+        height: 50px;
+        padding: 14px 89px;
+        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
+        & img {
+            height: 75%;
+        }
+    }
+    &__form {
+        @include row-dir;
+        margin-top: 5px;
+        background-color: #EAEAEA;
+        height: 50px;
+        gap: 17px;
+        justify-content: center;
+        align-items: center;
+        & label,
+        & input {
+            border: none;
+            background-color: #EAEAEA;
+            font-family: $text-font;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

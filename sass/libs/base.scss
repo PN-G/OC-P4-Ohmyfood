@@ -1,1 +1,20 @@
-@import "libs/variables.scss";
+@import "variables.scss";
+
+@mixin row-dir {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin col-dir {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+}
