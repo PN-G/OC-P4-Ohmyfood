@@ -1,5 +1,9 @@
 @import "mixins.scss";
 
+.section-title {
+    @include title;
+}
+
 .search {
     &__form {
         @include row-dir;
@@ -26,7 +30,6 @@
 
     &__title {
         margin-top: 42px;
-        @include title;
         font-family: $text-font;
         height: 68px;
         width: 275px;
@@ -51,7 +54,6 @@
 
     &__title {
         margin: 48px 0 26px 20px;
-        @include title;
         font-family: $text-font;
     }
     &__steps {
@@ -71,6 +73,7 @@
         background-color: #F6F6F6;
         border-radius: 20px;
         font-family: $text-font;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     }
 }
 
@@ -100,4 +103,70 @@
         @include medium-text;
     }
 
+}
+
+.section-restaurant {
+    @include col-dir;
+    background-color: #F6F6F6;
+    width: 100%;
+    padding: 54px 20px 66px 20px;
+    gap: 20px;
+
+    &__title {
+        font-family: $text-font;
+    }
+}
+
+.restaurant-cards {
+    @include col-dir;
+    gap: 18px;
+    &__card {
+        height: 251px;
+        width: 90%;
+        border-radius: 15px;
+    }
+}
+
+.card-content {
+    @include row-dir;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    &__img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    &__new {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        border-radius: 2px;
+        background-color: #99E2D0;
+        padding: 7px 9px;
+        font-family: $text-font;
+        font-size: 14px;
+        color: #008766;
+    }
+}
+
+.card-info {
+    @include row-dir;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 12px 25px 11px 13px;
+    max-height: 30%;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+
+    &__text {
+        
+        font-family: $text-font;
+        font-size: 18px;
+    }
+
+    &__title {
+        margin-bottom: 5px;
+    }
 }
