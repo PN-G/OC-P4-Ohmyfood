@@ -2,6 +2,23 @@
   margin: 0;
 }
 
+.search__form {
+  display: flex;
+  flex-direction: row;
+  background-color: #EAEAEA;
+  height: 50px;
+  gap: 17px;
+  justify-content: center;
+  align-items: center;
+}
+.search__form label, .search__form input {
+  border: none;
+  background-color: #EAEAEA;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .cta {
   display: flex;
   flex-direction: column;
@@ -58,23 +75,6 @@ header {
 }
 .header__logo img {
   height: 75%;
-}
-.header__form {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5px;
-  background-color: #EAEAEA;
-  height: 50px;
-  gap: 17px;
-  justify-content: center;
-  align-items: center;
-}
-.header__form label, .header__form input {
-  border: none;
-  background-color: #EAEAEA;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

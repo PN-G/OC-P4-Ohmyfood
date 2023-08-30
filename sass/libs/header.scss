@@ -15,21 +15,4 @@ header {
             height: 75%;
         }
     }
-    &__form {
-        @include row-dir;
-        margin-top: 5px;
-        background-color: #EAEAEA;
-        height: 50px;
-        gap: 17px;
-        justify-content: center;
-        align-items: center;
-        & label,
-        & input {
-            border: none;
-            background-color: #EAEAEA;
-            font-family: $text-font;
-            font-size: 18px;
-            font-weight: 500;
-        }
-    }
 }
