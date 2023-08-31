@@ -1,0 +1,19 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.search {
+    &__form {
+        @include row-dir;
+        background-color: $bg-secondary;
+        height: 50px;
+        gap: 17px;
+        justify-content: center;
+        align-items: center;
+        & label,
+        & input {
+            border: none;
+            background-color: $bg-secondary;
+            @include text-font;
+        }
+    }
+}

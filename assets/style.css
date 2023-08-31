@@ -2,9 +2,69 @@
   margin: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .section-title {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  align-items: center;
+  text-align: center;
+  height: 289px;
+}
+.cta__title {
+  margin-top: 42px;
+  height: 68px;
+  width: 275px;
+}
+.cta__subtitle {
+  font-size: 1.125em;
+  font-weight: 300;
+  height: 46px;
+  width: 315px;
+}
+
+.how-to__title {
+  margin: 48px 0 26px 20px;
+}
+.how-to__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 68px;
+}
+
+.section-restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  width: 100%;
+  padding: 54px 20px 66px 20px;
+  gap: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  padding: 14px 89px;
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header__logo img {
+  height: 75%;
 }
 
 .search__form {
@@ -19,59 +79,24 @@
 .search__form label, .search__form input {
   border: none;
   background-color: #EAEAEA;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
 }
 
-.cta {
-  display: flex;
-  flex-direction: column;
-  background-color: #F6F6F6;
-  align-items: center;
-  height: 289px;
-}
-.cta__title {
-  margin-top: 42px;
-  font-family: "Roboto", sans-serif;
-  height: 68px;
-  width: 275px;
-  text-align: center;
-}
-.cta__subtitle {
-  font-size: 18px;
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
-  height: 46px;
-  width: 315px;
-  text-align: center;
-}
-.cta__button {
-  margin-top: 27px;
+.gradient-btn {
   background: linear-gradient(0, #9356DC 0%, #FF79DA 100%);
   height: 50px;
   border: none;
   border-radius: 25px;
+  margin-top: 27px;
   padding: 13px 19px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   color: white;
   text-align: center;
 }
 
-.how-to__title {
-  margin: 48px 0 26px 20px;
-  font-family: "Roboto", sans-serif;
-}
-.how-to__steps {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-bottom: 68px;
-}
-
-.steps__button {
+.steps-btn {
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -80,11 +105,9 @@
   width: 322px;
   background-color: #F6F6F6;
   border-radius: 20px;
-  font-family: "Roboto", sans-serif;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-
-.steps-button__number {
+.steps-btn__number {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,31 +119,26 @@
   color: white;
   position: relative;
   right: 12px;
-  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
-.steps-button__icon {
+.steps-btn__icon {
   color: #7E7E7E;
   padding-right: 20px;
 }
-.steps-button__icon--colored {
+.steps-btn__icon--colored {
   color: #9356DC;
 }
-.steps-button__text {
-  font-size: 16px;
+.steps-btn__text {
+  font-size: 1em;
   font-weight: 500;
 }
 
-.section-restaurant {
-  display: flex;
-  flex-direction: column;
-  background-color: #F6F6F6;
-  width: 100%;
-  padding: 54px 20px 66px 20px;
-  gap: 20px;
-}
-.section-restaurant__title {
-  font-family: "Roboto", sans-serif;
+.new-btn {
+  border-radius: 2px;
+  background-color: #99E2D0;
+  padding: 7px 9px;
+  font-size: 14px;
+  color: #008766;
 }
 
 .restaurant-cards {
@@ -151,12 +169,6 @@
   position: absolute;
   right: 15px;
   top: 15px;
-  border-radius: 2px;
-  background-color: #99E2D0;
-  padding: 7px 9px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #008766;
 }
 
 .card-info {
@@ -170,28 +182,10 @@
   border-radius: 0 0 15px 15px;
 }
 .card-info__text {
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
 .card-info__title {
   margin-bottom: 5px;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-.header__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50px;
-  padding: 14px 89px;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
-}
-.header__logo img {
-  height: 75%;
 }
 
 /*# sourceMappingURL=style.css.map */

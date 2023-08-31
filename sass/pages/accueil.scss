@@ -1,0 +1,46 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.section-title {
+    @include title-font;
+}
+
+.cta {
+    @include col-dir;
+    background-color: $bg-primary;
+    align-items: center;
+    text-align: center;
+    height: 289px;
+
+    &__title {
+        margin-top: 42px;
+        height: 68px;
+        width: 275px;
+    }
+
+    &__subtitle {
+        @include subtitle-font;
+        height: 46px;
+        width: 315px;
+    }
+}
+
+.how-to {
+
+    &__title {
+        margin: 48px 0 26px 20px;
+    }
+    &__steps {
+        @include col-dir;
+        gap: 25px;
+        margin-bottom: 68px;
+    }
+}
+
+.section-restaurant {
+    @include col-dir;
+    background-color: $bg-primary;
+    width: 100%;
+    padding: 54px 20px 66px 20px;
+    gap: 20px;
+}

@@ -1,0 +1,38 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.steps-btn {
+    @include row-dir;
+    align-self: center;
+    align-items: center;
+    height: 72px;
+    width: 322px;
+    background-color: $bg-primary;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+    &__number {
+        @include row-dir;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background-color: $primary;
+        color: white;
+        position: relative;
+        right: 12px;
+        font-size: 14px;
+    }
+    &__icon {
+        color: #7E7E7E;
+        &--colored {
+            color: $primary;
+        }
+        padding-right: 20px;
+    }
+    &__text {
+        @include text-font;
+    }
+
+}
