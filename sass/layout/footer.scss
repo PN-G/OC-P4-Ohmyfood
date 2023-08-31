@@ -1,2 +1,26 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+
+footer {
+    color: white;
+    background-color: $bg-dark;
+    padding: 22px 25px;
+}
+
+.footer-logo {
+    font-family: $big-font;
+    font-size: 1.75em;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    @include col-dir;
+    gap: 7px;
+
+    &__link {
+        @include row-dir;
+        align-items: center;
+        gap: 11px;
+    }
+}

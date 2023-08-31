@@ -1,10 +1,9 @@
 .restaurant-cards {
-    @include col-dir;
-    gap: 18px;
     &__card {
-        height: 251px;
-        width: 90%;
+        height: 280px;
+        max-width: 92%;
         border-radius: 15px;
+        margin-top: 25px;
     }
 }
 
@@ -35,12 +34,8 @@
     background-color: white;
     border-radius: 0 0 15px 15px;
 
-    &__text {
-        
-        font-size: 18px;
-    }
-
     &__title {
+        font-weight: 700;
         margin-bottom: 5px;
     }
 }

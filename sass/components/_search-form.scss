@@ -13,7 +13,6 @@
         & input {
             border: none;
             background-color: $bg-secondary;
-            @include text-font;
         }
     }
 }

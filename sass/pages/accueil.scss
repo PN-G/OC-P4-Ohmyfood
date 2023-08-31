@@ -7,6 +7,7 @@
 
 .cta {
     @include col-dir;
+    gap: 27px;
     background-color: $bg-primary;
     align-items: center;
     text-align: center;
@@ -41,6 +42,15 @@
     @include col-dir;
     background-color: $bg-primary;
     width: 100%;
-    padding: 54px 20px 66px 20px;
-    gap: 20px;
+    padding: 48px 0;
+
+    &__title {
+        margin-left: 20px;
+    }
+}
+
+.restaurant-cards {
+    @include col-dir;
+    align-items: center;
+    width: 100%;
 }

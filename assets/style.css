@@ -2,18 +2,21 @@
   margin: 0;
 }
 
-body {
+* {
   font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .section-title {
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 700;
 }
 
 .cta {
   display: flex;
   flex-direction: column;
+  gap: 27px;
   background-color: #F6F6F6;
   align-items: center;
   text-align: center;
@@ -46,8 +49,17 @@ body {
   flex-direction: column;
   background-color: #F6F6F6;
   width: 100%;
-  padding: 54px 20px 66px 20px;
-  gap: 20px;
+  padding: 48px 0;
+}
+.section-restaurant__title {
+  margin-left: 20px;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 header {
@@ -67,6 +79,31 @@ header {
   height: 75%;
 }
 
+footer {
+  color: white;
+  background-color: #353535;
+  padding: 22px 25px;
+}
+
+.footer-logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.75em;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
 .search__form {
   display: flex;
   flex-direction: row;
@@ -79,8 +116,6 @@ header {
 .search__form label, .search__form input {
   border: none;
   background-color: #EAEAEA;
-  font-size: 1em;
-  font-weight: 500;
 }
 
 .gradient-btn {
@@ -88,10 +123,7 @@ header {
   height: 50px;
   border: none;
   border-radius: 25px;
-  margin-top: 27px;
   padding: 13px 19px;
-  font-size: 1em;
-  font-weight: 500;
   color: white;
   text-align: center;
 }
@@ -102,7 +134,7 @@ header {
   align-self: center;
   align-items: center;
   height: 72px;
-  width: 322px;
+  width: 85%;
   background-color: #F6F6F6;
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -128,10 +160,6 @@ header {
 .steps-btn__icon--colored {
   color: #9356DC;
 }
-.steps-btn__text {
-  font-size: 1em;
-  font-weight: 500;
-}
 
 .new-btn {
   border-radius: 2px;
@@ -141,15 +169,11 @@ header {
   color: #008766;
 }
 
-.restaurant-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
 .restaurant-cards__card {
-  height: 251px;
-  width: 90%;
+  height: 280px;
+  max-width: 92%;
   border-radius: 15px;
+  margin-top: 25px;
 }
 
 .card-content {
@@ -181,10 +205,8 @@ header {
   background-color: white;
   border-radius: 0 0 15px 15px;
 }
-.card-info__text {
-  font-size: 18px;
-}
 .card-info__title {
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
