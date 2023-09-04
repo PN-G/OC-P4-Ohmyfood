@@ -1,0 +1,26 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.menu-btn {
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    @include row-dir;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__text {
+        @include col-dir;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    &__title {
+        @include card-title-font;
+    }
+    &__price {
+        font-weight: 700;
+    }
+}
+

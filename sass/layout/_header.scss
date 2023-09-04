@@ -1,0 +1,21 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.header {
+    @include row-dir;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 65px;
+
+    &__back-icon {
+        @include row-dir;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 17px;
+        text-decoration: none;
+        color: $bg-dark;
+        font-size: 1.5em;
+    }
+}   

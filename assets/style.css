@@ -23,7 +23,7 @@
   height: 289px;
 }
 .cta__title {
-  margin-top: 42px;
+  margin-top: 40px;
   height: 68px;
   width: 275px;
 }
@@ -34,14 +34,18 @@
   width: 315px;
 }
 
+.how-to {
+  background-color: white;
+  padding: 40px 0;
+}
 .how-to__title {
-  margin: 48px 0 26px 20px;
+  margin: 0 0 26px 20px;
 }
 .how-to__steps {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-bottom: 68px;
+  margin-bottom: 40px;
 }
 
 .section-restaurant {
@@ -49,7 +53,7 @@
   flex-direction: column;
   background-color: #F6F6F6;
   width: 100%;
-  padding: 48px 0;
+  padding: 40px 0;
 }
 .section-restaurant__title {
   margin-left: 20px;
@@ -62,21 +66,38 @@
   width: 100%;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
+body {
+  background-color: #F6F6F6;
 }
 
-.header__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 50px;
-  padding: 14px 89px;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
+.heading {
+  height: 275px;
+  width: 100%;
 }
-.header__logo img {
-  height: 75%;
+.heading__picture {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 65px;
+}
+.header__back-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 17px;
+  text-decoration: none;
+  color: #353535;
+  font-size: 1.5em;
 }
 
 footer {
@@ -87,8 +108,7 @@ footer {
 
 .footer-logo {
   font-family: "Shrikhand", cursive;
-  font-size: 1.75em;
-  font-weight: 300;
+  font-size: 1.125em;
   margin-bottom: 16px;
 }
 
@@ -121,11 +141,16 @@ footer {
 .gradient-btn {
   background: linear-gradient(0, #9356DC 0%, #FF79DA 100%);
   height: 50px;
+  width: fit-content;
   border: none;
   border-radius: 25px;
-  padding: 13px 19px;
+  padding: 15px 20px;
   color: white;
   text-align: center;
+}
+.gradient-btn--cmd {
+  padding-left: 49px;
+  padding-right: 49px;
 }
 
 .steps-btn {
@@ -169,6 +194,31 @@ footer {
   color: #008766;
 }
 
+.menu-btn {
+  background-color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu-btn__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 5px;
+}
+.menu-btn__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.menu-btn__price {
+  font-weight: 700;
+}
+
 .restaurant-cards__card {
   height: 280px;
   max-width: 92%;
@@ -199,15 +249,69 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 22px;
   padding: 12px 25px 11px 13px;
   max-height: 30%;
   background-color: white;
   border-radius: 0 0 15px 15px;
 }
 .card-info__title {
+  font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  position: relative;
+  bottom: 32px;
+  border-radius: 40px 40px 0 0;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 17px;
+}
+.menu__title {
+  font-size: 1.75em;
+  font-weight: 700;
+  font-family: "Shrikhand", cursive;
+}
+
+.menu-part {
+  padding: 0 13px;
+}
+.menu-part__header {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.menu-part__separator {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  border: none;
+  box-shadow: none;
+}
+.menu-part__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.command-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.shadow-box {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=style.css.map */

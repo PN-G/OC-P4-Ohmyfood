@@ -28,14 +28,13 @@
 .card-info {
     @include row-dir;
     justify-content: space-between;
-    font-size: 22px;
     padding: 12px 25px 11px 13px;
     max-height: 30%;
     background-color: white;
     border-radius: 0 0 15px 15px;
 
     &__title {
-        font-weight: 700;
+        @include card-title-font;
         margin-bottom: 5px;
     }
 }

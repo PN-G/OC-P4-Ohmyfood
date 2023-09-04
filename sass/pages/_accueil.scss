@@ -14,7 +14,7 @@
     height: 289px;
 
     &__title {
-        margin-top: 42px;
+        margin-top: 40px;
         height: 68px;
         width: 275px;
     }
@@ -27,14 +27,15 @@
 }
 
 .how-to {
-
+    background-color: white;
+    padding: 40px 0;
     &__title {
-        margin: 48px 0 26px 20px;
+        margin: 0 0 26px 20px;
     }
     &__steps {
         @include col-dir;
         gap: 25px;
-        margin-bottom: 68px;
+        margin-bottom: 40px;
     }
 }
 
@@ -42,7 +43,7 @@
     @include col-dir;
     background-color: $bg-primary;
     width: 100%;
-    padding: 48px 0;
+    padding: 40px 0;
 
     &__title {
         margin-left: 20px;
