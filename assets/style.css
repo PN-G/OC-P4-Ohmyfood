@@ -225,6 +225,10 @@ footer {
   border-radius: 15px;
   margin-top: 25px;
 }
+.restaurant-cards__link {
+  text-decoration: none;
+  color: black;
+}
 
 .card-content {
   display: flex;
@@ -273,8 +277,9 @@ footer {
 .menu__header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 17px;
+  padding: 0 40px 0 20px;
 }
 .menu__title {
   font-size: 1.75em;
