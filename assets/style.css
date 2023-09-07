@@ -315,6 +315,33 @@ footer {
   padding-bottom: 8px;
 }
 
+.like-section {
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+.like-section__icon {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+}
+.like-section__icon--full {
+  background: linear-gradient(25deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0%;
+  transform: scale(0.1);
+  transition: transform 300ms;
+}
+.like-section:hover .like-section__icon--empty {
+  opacity: 0%;
+}
+.like-section:hover .like-section__icon--full {
+  opacity: 100%;
+  transform: scale(1);
+}
+
 .shadow-box {
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.15);
 }

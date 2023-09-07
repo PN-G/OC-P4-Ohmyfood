@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">    
     <title>Ohmyfood - La Palette du Gout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,14 @@
     <main class="menu">
         <div class="menu__header">
             <h1 class="menu__title">La palette du goût</h1>
-            <i class=" card-info__rating fa-regular fa-heart"></i>
+            <div class="like-section">
+                <div class="like-section__icon like-section__icon--empty">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="like-section__icon like-section__icon--full">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
         </div>
         <div class="menu-part">
             <h2 class="menu-part__header">Entrées</h2>
