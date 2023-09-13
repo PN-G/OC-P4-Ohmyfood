@@ -350,4 +350,50 @@ footer {
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15), inset 0 60px 4px rgba(255, 255, 255, 0);
 }
 
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--one {
+  animation: menu-loading 450ms forwards ease-out;
+}
+.menu-part--two {
+  animation: menu-loading 450ms 150ms forwards ease-out;
+}
+.menu-part--three {
+  animation: menu-loading 450ms 300ms forwards ease-out;
+}
+
+.menu-btn {
+  opacity: 0;
+}
+.menu-btn--one {
+  animation: slide-in 450ms 300ms forwards ease-in-out;
+}
+.menu-btn--two {
+  animation: slide-in 450ms 450ms forwards ease-in-out;
+}
+.menu-btn--three {
+  animation: slide-in 450ms 600ms forwards ease-in-out;
+}
+
+@keyframes menu-loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
