@@ -10,6 +10,12 @@
     padding: 15px 20px;
     color: white;
     text-align: center;
+    box-shadow: $shadow;
+    transition: box-shadow 450ms;
+
+    &:hover {
+        box-shadow: $hover-shadow;
+    }
 
     &--cmd {
         padding-left: 49px;
