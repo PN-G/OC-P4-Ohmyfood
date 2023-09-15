@@ -41,17 +41,88 @@
 
 .section-restaurant {
     @include col-dir;
+    justify-content: center;
+    align-items: center;
     background-color: $bg-primary;
     width: 100%;
     padding: 40px 0;
 
     &__title {
+        align-self: flex-start;
         margin-left: 20px;
     }
 }
 
 .restaurant-cards {
     @include col-dir;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+    .cta {
+        height: 240px;
+        &__title,
+        &__subtitle {
+            height: fit-content;
+            width: 100%;
+        }
+    }
+
+    .how-to {
+        &__steps {
+            @include row-dir;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .restaurant-cards {
+        @include row-dir;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+
+    .cta {
+        &__title {
+            font-size: 2.125em;
+        }
+        &__subtitle {
+            font-size: 1em;
+        }
+    }
+
+    .how-to {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .section-restaurant {
+        &__title {
+            padding-left: 80px;
+        }
+    }
+
+    .restaurant-cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .how-to {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .section-restaurant {
+        &__title {
+            padding-left: 180px;
+        }
+    }
 }

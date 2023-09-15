@@ -23,3 +23,38 @@ footer {
         gap: 11px;
     }
 }
+@media only screen and (min-width: 768px) {
+    footer {
+        @include row-dir;
+        gap: 25px;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-links {
+        @include row-dir;
+        gap: 25px;
+
+        &__link {
+            gap: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    footer {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 70px;
+    }
+
+    .footer-logo {
+        padding-top: 30px;
+    }
+
+    .footer-links {
+        gap: 30px;
+    }
+}

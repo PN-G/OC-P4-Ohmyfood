@@ -51,21 +51,74 @@
 .section-restaurant {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #F6F6F6;
   width: 100%;
   padding: 40px 0;
 }
 .section-restaurant__title {
+  align-self: flex-start;
   margin-left: 20px;
 }
 
 .restaurant-cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
+@media only screen and (min-width: 768px) {
+  .cta {
+    height: 240px;
+  }
+  .cta__title, .cta__subtitle {
+    height: fit-content;
+    width: 100%;
+  }
+  .how-to__steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  .restaurant-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .cta__title {
+    font-size: 2.125em;
+  }
+  .cta__subtitle {
+    font-size: 1em;
+  }
+  .how-to {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .section-restaurant__title {
+    padding-left: 80px;
+  }
+  .restaurant-cards {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .how-to {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .section-restaurant__title {
+    padding-left: 180px;
+  }
+}
 body {
   background-color: #F6F6F6;
 }
@@ -124,6 +177,37 @@ footer {
   gap: 11px;
 }
 
+@media only screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .footer-logo {
+    margin-bottom: 0;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .footer-links__link {
+    gap: 5px;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 70px;
+  }
+  .footer-logo {
+    padding-top: 30px;
+  }
+  .footer-links {
+    gap: 30px;
+  }
+}
 .search__form {
   display: flex;
   flex-direction: row;
@@ -191,6 +275,11 @@ footer {
   color: #9356DC;
 }
 
+@media only screen and (min-width: 768px) {
+  .steps-btn {
+    width: 30%;
+  }
+}
 .new-btn {
   border-radius: 2px;
   background-color: #99E2D0;
@@ -320,6 +409,29 @@ footer {
   margin-bottom: 5px;
 }
 
+@media only screen and (min-width: 768px) {
+  .restaurant-cards__card {
+    width: 23%;
+    height: 300px;
+  }
+  .card-content {
+    height: 75%;
+  }
+  .card-info {
+    height: 20%;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .restaurant-cards__card {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .restaurant-cards {
+    width: 85%;
+  }
+}
 .menu {
   background-color: #F6F6F6;
   position: relative;

@@ -42,3 +42,34 @@
         margin-bottom: 5px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .restaurant-cards {
+        &__card {
+            width: 23%;
+            height: 300px;
+        }
+    }
+    .card-content {
+        height: 75%;
+    }
+
+    .card-info {
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    .restaurant-cards {
+        &__card {
+            width: 40%;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .restaurant-cards {
+        width: 85%;  
+    }
+}
