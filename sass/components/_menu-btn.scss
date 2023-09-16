@@ -4,7 +4,7 @@
 .menu-btn {
     @include row-dir;
     align-items: center;
-    height: 90px;
+    height: 75px;
     background-color: white;
     border: none;
     border-radius: 15px;
@@ -75,4 +75,13 @@
     to {
         transform: rotate(-360deg);
     }
+}
+
+@media only screen and (min-width: 768px)  {
+    .menu-btn {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
 }

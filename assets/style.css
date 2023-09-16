@@ -292,7 +292,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 90px;
+  height: 75px;
   background-color: white;
   border: none;
   border-radius: 15px;
@@ -362,6 +362,13 @@ footer {
   }
   to {
     transform: rotate(-360deg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .menu-btn {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 .restaurant-cards__card {
@@ -437,7 +444,8 @@ footer {
   position: relative;
   bottom: 32px;
   border-radius: 40px 40px 0 0;
-  padding-top: 32px;
+  padding: 32px 0;
+  margin-bottom: -32px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -483,6 +491,40 @@ footer {
   padding-bottom: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu-part__header, .menu-part__separator {
+    margin-left: 15%;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .menu {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .menu__title {
+    width: 100%;
+    text-align: center;
+  }
+  .menu .like-section {
+    right: 28%;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .menu {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
 .like-section {
   width: 25px;
   height: 25px;
