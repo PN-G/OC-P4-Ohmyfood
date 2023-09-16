@@ -1,0 +1,187 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.loader {
+    @include col-dir;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba( 255, 255, 255, 0.8);
+    animation: loading-end 300ms 2500ms forwards;
+}
+
+@keyframes loading-end {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+.steam {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-left: 55px;
+    animation: dance 500ms 750ms infinite linear;
+    animation: shake 500ms 750ms infinite linear;
+    animation-direction: alternate-reverse;
+    transform-origin: bottom;
+
+    &wave {
+        width: 12px;
+        opacity: 0;
+
+        &--one {
+            height: 75px;
+            border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+            background-color: $primary;
+        }
+        &--two {
+            height: 70px;
+            border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+            background-color: $secondary;
+        }
+        &--three {
+            height: 75px;
+            border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%;
+            background-color: $tertiary;
+        }
+        animation: appear 500ms forwards linear;
+        animation: up 1000ms 750ms infinite linear forwards;
+        transform-origin: bottom;
+    }
+}
+
+.pan {
+    @include row-dir;
+    justify-content: center;
+    align-items: flex-start;
+    animation: shake 500ms infinite linear;
+    animation-direction: alternate-reverse;
+    &__handle {
+        margin-top: 5px;
+        width: 58px;
+        height: 12px;
+        background-color: $bg-dark;
+        border-radius: 10px 0 0 20px;
+    }
+    &__handlelink {
+        margin-top: 5px;
+        width: 3px;
+        height: 8px;
+        background-color: $bg-light;
+        border: 2px solid black;
+    }
+    &__recipient {
+        align-self: center;
+        @include col-dir;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        height: 60px;
+        width: 100px;
+        background-color: $bg-dark;
+        border-radius: 5px 5px 15px 15px;
+        overflow: hidden;
+    }
+}
+
+.flames {
+    position: relative;
+    bottom: -3px;
+    color: $bg-light;
+
+    animation: flame-dance 250ms infinite;
+    animation-direction: alternate-reverse;
+}
+
+.flame {
+    &--one {
+        animation: flame-grow 200ms infinite ease-in-out;
+        animation-direction: alternate;
+        transform-origin: bottom;
+    }
+    &--two {
+        animation: flame-grow 200ms 100ms infinite ease-in-out;
+        animation-direction: alternate;
+        transform-origin: bottom;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }   
+}
+
+@keyframes dance {
+    from {
+        opacity: 0.8;
+        transform: skewX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: skewX(1deg);
+    }
+}
+
+@keyframes up {
+    from{
+        transform: translateY(0px) scale(0.3);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(-20px) scale(0.6);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-40px) scale(0.5);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translateY(-80px) scale(0.3);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateY(-250px) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(1px);
+    }
+    to {
+        transform: translateX(-1px);
+    }
+}
+
+@keyframes flame-dance {
+    from {
+        opacity: 0.9;
+        transform: skewX(-3deg);
+    }
+    to {
+        opacity: 1;
+        transform: skewX(3deg);
+    }
+}
+
+@keyframes flame-grow {
+    from {
+        transform: scaleY(0.8)
+    }
+    to {
+        transform: scaleY(1)
+    }
+}
