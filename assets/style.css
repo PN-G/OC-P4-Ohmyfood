@@ -735,27 +735,150 @@ footer {
   opacity: 0;
   overflow: hidden;
 }
-.menu-part--one {
+.menu-part--1 {
   animation: menu-loading 450ms forwards ease-out;
-}
-.menu-part--two {
-  animation: menu-loading 450ms 150ms forwards ease-out;
-}
-.menu-part--three {
-  animation: menu-loading 450ms 300ms forwards ease-out;
+  animation-delay: 100ms;
 }
 
-.menu-btn {
+.menu-part {
   opacity: 0;
+  overflow: hidden;
 }
-.menu-btn--one {
-  animation: slide-in 450ms 300ms forwards ease-in-out;
+.menu-part--2 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 200ms;
 }
-.menu-btn--two {
-  animation: slide-in 450ms 450ms forwards ease-in-out;
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
 }
-.menu-btn--three {
-  animation: slide-in 450ms 600ms forwards ease-in-out;
+.menu-part--3 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 300ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--4 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 400ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--5 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 500ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--6 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 600ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--7 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 700ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--8 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 800ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--9 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 900ms;
+}
+
+.menu-part {
+  opacity: 0;
+  overflow: hidden;
+}
+.menu-part--10 {
+  animation: menu-loading 450ms forwards ease-out;
+  animation-delay: 1000ms;
+}
+
+.menu-btn--1 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 300ms;
+}
+
+.menu-btn--2 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 450ms;
+}
+
+.menu-btn--3 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 600ms;
+}
+
+.menu-btn--4 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 750ms;
+}
+
+.menu-btn--5 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 900ms;
+}
+
+.menu-btn--6 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 1050ms;
+}
+
+.menu-btn--7 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 1200ms;
+}
+
+.menu-btn--8 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 1350ms;
+}
+
+.menu-btn--9 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 1500ms;
+}
+
+.menu-btn--10 {
+  opacity: 0;
+  animation: slide-in 450ms forwards ease-in-out;
+  animation-delay: 1650ms;
 }
 
 @keyframes menu-loading {

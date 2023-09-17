@@ -1,31 +1,24 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-.menu-part {
-    opacity: 0;
-    overflow: hidden;
 
-    &--one {
-        animation: menu-loading 450ms forwards ease-out;
-    }
-    &--two {
-        animation: menu-loading 450ms 150ms forwards ease-out;
-    }
-    &--three {
-        animation: menu-loading 450ms 300ms forwards ease-out;
+@for $i from 1 through 10 {
+    .menu-part {
+        opacity: 0;
+        overflow: hidden;
+
+        &--#{$i} {
+            animation: menu-loading 450ms forwards ease-out;
+            animation-delay: $i*100ms;
+        }
     }
 }
 
-.menu-btn {
-    opacity: 0;
-    &--one {
-        animation: slide-in 450ms 300ms forwards ease-in-out;
-    }
-    &--two {
-        animation: slide-in 450ms 450ms forwards ease-in-out;
-    }
-    &--three {   
-        animation: slide-in 450ms 600ms forwards ease-in-out;     
+@for $i from 1 through 10 {
+    .menu-btn--#{$i} {
+        opacity: 0;
+        animation: slide-in 450ms forwards ease-in-out;
+        animation-delay: 150ms + ($i*150ms);
     }
 }
 
