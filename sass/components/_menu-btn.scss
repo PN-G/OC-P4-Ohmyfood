@@ -9,6 +9,8 @@
     border: none;
     border-radius: 15px;
     padding: 0;
+    margin-bottom: 8px;
+    box-shadow: $shadow;
     overflow: hidden;
 
     &__text {    
@@ -18,7 +20,6 @@
         text-align: left;
         padding-left: 20px;
         overflow: hidden;
-
     }
     &__title {
         @include card-title-font;
@@ -48,6 +49,7 @@
     }
 
     &:hover {
+        cursor: pointer;
         & .menu-btn__check {
             animation: check-slide-in 300ms forwards ease-in-out;
         }

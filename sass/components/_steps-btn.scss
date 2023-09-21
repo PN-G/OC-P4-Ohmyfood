@@ -26,10 +26,15 @@
     }
     &__icon {
         color: #7E7E7E;
-        &--colored {
+        padding-right: 20px;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        & .steps-btn__icon {
             color: $primary;
         }
-        padding-right: 20px;
     }
 }
 

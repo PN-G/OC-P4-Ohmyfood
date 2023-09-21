@@ -194,6 +194,9 @@ footer {
   .footer-links__link {
     gap: 5px;
   }
+  .footer-links:hover {
+    cursor: pointer;
+  }
 }
 @media only screen and (min-width: 1060px) {
   footer {
@@ -411,7 +414,8 @@ footer {
   transition: box-shadow 450ms;
 }
 .gradient-btn:hover {
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3), inset 0 60px 4px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3), inset 0 60px 4px rgba(255, 255, 255, 0.25);
 }
 .gradient-btn--cmd {
   padding-left: 49px;
@@ -447,7 +451,10 @@ footer {
   color: #7E7E7E;
   padding-right: 20px;
 }
-.steps-btn__icon--colored {
+.steps-btn:hover {
+  cursor: pointer;
+}
+.steps-btn:hover .steps-btn__icon {
   color: #9356DC;
 }
 
@@ -473,6 +480,8 @@ footer {
   border: none;
   border-radius: 15px;
   padding: 0;
+  margin-bottom: 8px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15), inset 0 60px 4px rgba(255, 255, 255, 0);
   overflow: hidden;
 }
 .menu-btn__text {
@@ -514,6 +523,9 @@ footer {
   font-size: 1.75em;
   transform: scaleX(0);
   transform-origin: right;
+}
+.menu-btn:hover {
+  cursor: pointer;
 }
 .menu-btn:hover .menu-btn__check {
   animation: check-slide-in 300ms forwards ease-in-out;
@@ -718,6 +730,9 @@ footer {
   opacity: 0%;
   transform: scale(0.1);
   transition: transform 300ms;
+}
+.like-section:hover {
+  cursor: pointer;
 }
 .like-section:hover .like-section__icon--empty {
   opacity: 0%;

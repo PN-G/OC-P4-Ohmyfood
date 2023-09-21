@@ -40,6 +40,10 @@ footer {
         &__link {
             gap: 5px;
         }
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
