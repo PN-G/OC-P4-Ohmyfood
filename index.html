@@ -37,20 +37,20 @@
             <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo du site">
         </div>
     </header>
-    <section class="search">
+    <div class="search">
         <form class="search__form">
             <label for="search-text">
                 <i class="fa-solid fa-location-dot"></i>
             </label>
             <input id="search-text" size="11" type="text" value="Paris, Belleville">
         </form>
-    </section>
+    </div>
     <section class="cta">
         <h2 class="section-title cta__title">Réservez le menu qui vous convient</h2>
         <p class="cta__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-        <a href="#section-restaurants" class="cta__link">
-            <button class="gradient-btn">Explorer nos restaurants</button>
-        </a>
+        <form>
+            <button type="submit" formaction="#section-restaurants" class="gradient-btn">Explorer nos restaurants</button>
+        </form>
     </section>
     <section class="how-to">
         <h2 class="section-title how-to__title">Fonctionnement</h2>
@@ -169,7 +169,7 @@
             <a class="footer-links__link"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
             <a class="footer-links__link"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
             <a class="footer-links__link">Mentions légales</a>
-            <a class="footer-links__link">Contact</a>
+            <a href="mailto:order@ohmyfood.fr" class="footer-links__link">Contact</a>
         </div>
     </footer>    
 </body>

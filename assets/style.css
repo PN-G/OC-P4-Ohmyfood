@@ -192,6 +192,8 @@ footer {
     gap: 25px;
   }
   .footer-links__link {
+    text-decoration: none;
+    color: white;
     gap: 5px;
   }
   .footer-links:hover {
